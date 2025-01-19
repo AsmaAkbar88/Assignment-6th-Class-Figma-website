@@ -1,8 +1,8 @@
 'use client'
 
 import { useRouter } from 'next/navigation';
-import { mplus } from '@/app/UI/fonts';
-import { Button } from '@/components/ui/button';
+import { mplus } from '../UI/fonts';
+
 
 
 
@@ -19,7 +19,7 @@ const Hero = () => {
           {/* Asma Heading  */}
 
           <div className="text-8xl font-extrabold text-red-800 ">
-            <h1 className={mplus.className}>Asma Furniture</h1></div>
+            <h1 className={`${mplus.className}`}>Asma Furniture</h1></div>
 
           {/* Furniture Detail  */}
 
@@ -33,7 +33,11 @@ const Hero = () => {
 
           <div className=' flex justify-center items-center '>
 
-            <Button className='bg-white relative z-20 mt-12 text-red-800 border-2 border-red-700 rounded-lg px-12 py-6 font-extrabold hover:bg-red-50 hover:text-red-900 text-3xl' onClick={() => router.push('/Contact')}>Contact Me </Button>
+            <button className='bg-white relative
+             z-20 mt-12 text-red-800 border-2 border-red-700 
+             rounded-lg px-12 py-6 font-extrabold hover:bg-red-50
+              hover:text-red-900 text-3xl' onClick={() =>
+               router.push('/Contact')}>Contact Me </button>
           </div>
 
         </div>

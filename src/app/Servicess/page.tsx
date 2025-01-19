@@ -1,7 +1,7 @@
 import React from 'react'
-import { mplus } from '../UI/fonts'
-import Image from 'next/image'
 
+import Image from 'next/image'
+import { mplus } from '../UI/fonts'
 const page = () => {
   return (
     <div className='flex flex-col justify-center items-center p-16'>
